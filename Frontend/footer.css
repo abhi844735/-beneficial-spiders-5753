@@ -1,0 +1,161 @@
+.list > li {
+    cursor: pointer;
+  }
+  
+  #footer-wrap {
+    border: 1px solid #e7ebed;
+    background-color: #f4f5f7;
+    font-size: 0.8rem;
+  }
+  
+  #top-footer,
+  #bottom-first-footer {
+    padding: 1.5% 3% 2% 4%;
+  }
+  
+  .container {
+    width: 100%;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .top-footer-col {
+    flex-basis: 33.3%;
+    margin: 0;
+  }
+  
+  #footer-logo,
+  .footer-col-heading {
+    margin-top: 4.3%;
+    margin-bottom: 2%;
+  }
+  
+  .footer-col-heading > a {
+    margin-bottom: 2%;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .list {
+    padding: 0%;
+    margin-top: 0%;
+  }
+  
+  .list a,
+  .footer-col-wrapper > a,
+  p {
+    text-decoration: none;
+    color: #969696;
+    line-height: 1.62;
+    font-weight: 400;
+  }
+  
+  .list li {
+    list-style-type: none;
+    color: #969696;
+  }
+  
+  .footer-col-wrapper {
+    padding-right: 18%;
+  }
+  
+  .bottom-footer-col {
+    flex-basis: 33.3%;
+    margin: 0;
+  }
+  
+  .wrap-content {
+    padding-right: 15%;
+  }
+  
+  #cards-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 8vh 8vh;
+  }
+  
+  #cards-wrap > div {
+    margin: 0% 15% 15% 0%;
+  }
+  
+  #cards-wrap img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+  }
+  
+  .store {
+    width: 100%;
+    margin: 0%;
+    padding-left: 0%;
+  }
+  
+  .store > li {
+    width: 50%;
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0%;
+  }
+  
+  .store > li > a > img {
+    width: 95%;
+    height: 7vh;
+  }
+  
+  .social-media-wrap {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    padding-left: 0%;
+  }
+  
+  .social-media-wrap > li {
+    flex-basis: 20%;
+    margin: 0%;
+    list-style: none;
+    padding-left: 0%;
+  }
+  
+  .social-media-wrap > li > a > img {
+    width: 75%;
+    height: 7vh;
+  }
+  
+  hr {
+    background-color: rgb(236, 233, 233);
+    border: 0px;
+    height: 2px;
+  }
+  
+  #bottom-last-footer {
+    padding: 0% 5% 1% 5%;
+  }
+  
+  .flex-basis50 {
+    flex-basis: 50%;
+    padding: 0%;
+  }
+  
+  #blf-col > ul {
+    padding: 0%;
+  }
+  
+  #blf-col > ul > li,
+  #blf-col > ul > li > a {
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    float: left;
+    color: gray;
+  }
+  .footer-logo{
+    width: 50%;
+    border-radius: 5px;
+  }
+  

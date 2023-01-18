@@ -1,0 +1,66 @@
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#top-head>h1{
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    
+    font-size: 30px;
+}
+#signup-box{
+    /* border: 1px solid black; */
+    height: auto;
+    background-color:white;
+    border: 1px solid red;
+    width: 50%;
+   
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+    
+    margin: auto;
+}
+input{
+    width: 70%;
+    padding: 5px 7px;
+    border: 0.5 solid red;
+    margin: 8px 0px;
+
+}
+label{
+    color: red;
+    text-align: left;
+    font-size: 22px;
+    margin: 5px 0px;
+}
+#member{
+    color: red;
+    margin: 5px 3px;
+    font-size: 16px;
+}
+input[type="submit"]{
+    color: white;
+    font-size: 22px;
+    background-color: red;
+    border-radius: 23px;
+    border: none;
+}
+/* h4{
+    margin: 5px 0px;
+    color: red;
+} */
+p{
+    /* color: red; */
+    margin: 7px 0px;
+}
+
