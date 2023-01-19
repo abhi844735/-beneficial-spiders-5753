@@ -24,11 +24,72 @@ function renderData(data){
         <span class="dis_price">Rs.${elem.discount_price}</span><span class="price">Rs.${elem.price}</span>
         <h5 class="discount">${elem.discount}% Off</h5>
         <p>Total Saving : ${elem.cashback_price}</p>
-        <p>Ships in ${elem.cashback_price} day</p>
-        <button class="cart_btn">cart</button><button class="wishlist_btn">Wishlist</button>
+        <p>Ships in ${elem.shipday} day</p>
+        <button  data-id="${elem._id}" class="cart_btn">cart</button><button class="wishlist_btn">Wishlist</button>
     </div>`
     }).join(" ")}`
+    let all_cart_btns=document.querySelectorAll(".cart_btn");
+    for(let btn of all_cart_btns){
+        btn.addEventListener("click",(e)=>{
+            let id = e.target.dataset.id;
+            cart(id)
+        })
+    }
+   
 }
+let token = localStorage.getItem("token")
+let cartitems=JSON.parse(localStorage.getItem("cart-item"))||[];
+function cart(id){
+    if(token){
+        let filterdata=bag.filter((elem)=>{
+            return elem._id==id;
+        });
+        let flag=false;
+        cartitems.forEach(element => {
+            if(element._id==id){
+                flag=true;
+                return;
+            }
+        });
+        if(flag){
+            alert("Item is already in the cart");
+        }else{
+            let data=filterdata[0];
+            data.quantity=1
+            cartitems.push(data);
+            localStorage.setItem("cart-item",JSON.stringify(cartitems))
+            alert("Item added to cart")
+        }
+       
+        
+    }
+}
+// let cartitems=JSON.parse(localStorage.getItem("cart-item"))||[];
+// function cart(id){
+//     if(token){
+//         let filterdata=bag.filter((elem)=>{
+//             return elem._id==id;
+//         });
+//         let flag=false;
+//         cartitems.forEach(element => {
+//             if(element._id==id){
+//                 flag=true;
+//                 return;
+//             }
+//         });
+//         if(flag){
+//             alert("Item is already in the cart");
+//         }else{
+//             let data=filterdata[0];
+//             cartitems.push(data);
+//             localStorage.setItem("cart-item",JSON.stringify(cartitems))
+//             alert("Item added to cart")
+//         }
+       
+        
+//     }
+// }
+
 let bed_btn=document.querySelector(".bed");
 bed_btn.addEventListener("click",()=>{
     fetching_data("Bed")
@@ -74,7 +135,7 @@ function sort_by_price(){
   }
   display_products(data)
 }
-console.log(bag)
+// console.log(bag)
 document.querySelector("#search").addEventListener("input",()=>{
     let q=document.querySelector("#search").value;
     console.log(q)
