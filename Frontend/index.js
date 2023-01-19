@@ -20,12 +20,14 @@ let logged_name=localStorage.getItem("username")||"";
 let username = document.getElementById("username");
 username.innerText=logged_name;
 username.style.color="red";
-
+// let cartitems=JSON.parse(localStorage.getItem("cart-item"))||[];
 
 let logout=document.getElementById("logout");
 logout.addEventListener("click",(e)=>{
     localStorage.setItem("username","");
     localStorage.setItem("token","");
+    // localStorage.setItem("cart-item",JSON.stringify())
+    // localStorage.setItem("wishlist-item","")
 })
 
 // adding footer
