@@ -24,9 +24,7 @@ username.style.color="red";
 
 let logout=document.getElementById("logout");
 logout.addEventListener("click",(e)=>{
-    localStorage.setItem("username","");
-    localStorage.setItem("token","");
-    // localStorage.setItem("cart-item",JSON.stringify())
+    localStorage.clear()
     // localStorage.setItem("wishlist-item","")
 })
 

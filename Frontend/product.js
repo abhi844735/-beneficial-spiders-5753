@@ -35,6 +35,14 @@ function renderData(data){
             cart(id)
         })
     }
+   // let all_wishlist_btns=document.querySelectorAll(".wishlist_btn");
+    // for(let btn of all_wishlist_btns){
+    //     btn.addEventListener("click",(e)=>{
+
+    //         let id = e.target.dataset.id;
+    //         wishlist(id)
+    //     })
+    // }
    
 }
 let token = localStorage.getItem("token")
@@ -62,31 +70,36 @@ function cart(id){
         }
        
         
+    }else{
+        alert("please login first")
     }
 }
-// let cartitems=JSON.parse(localStorage.getItem("cart-item"))||[];
-// function cart(id){
+// let wishlist_items=JSON.parse(localStorage.getItem("wishlist-item"))||[];
+// function wishlist(id){
 //     if(token){
 //         let filterdata=bag.filter((elem)=>{
 //             return elem._id==id;
 //         });
 //         let flag=false;
-//         cartitems.forEach(element => {
+//         wishlist_items.forEach(element => {
 //             if(element._id==id){
 //                 flag=true;
 //                 return;
 //             }
 //         });
 //         if(flag){
-//             alert("Item is already in the cart");
+//             alert("Item is already in the wishlist");
 //         }else{
 //             let data=filterdata[0];
-//             cartitems.push(data);
-//             localStorage.setItem("cart-item",JSON.stringify(cartitems))
-//             alert("Item added to cart")
+//             // data.quantity=1
+//             wishlist_items.push(data);
+//             localStorage.setItem("wishlist-item",JSON.stringify(wishlist_items))
+//             alert("Item added to wishlist")
 //         }
        
         
+//     }else{
+//         alert("please login first")
 //     }
 // }
 
@@ -133,7 +146,7 @@ function sort_by_price(){
     bag.sort((a,b)=> b.discount_price - a.discount_price)
     renderData(bag)
   }
-  display_products(data)
+//   display_products(data)
 }
 // console.log(bag)
 document.querySelector("#search").addEventListener("input",()=>{

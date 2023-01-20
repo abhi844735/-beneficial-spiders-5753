@@ -1,0 +1,248 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.nav{
+    justify-content: space-between;
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.nav>div>a{
+    margin: 10px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+.nav a:hover{
+    opacity: 0.7;
+}
+.logo{
+    width:80%;
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+.logo a{
+    text-decoration: none;
+    color: black;
+}
+.logo img{
+    width: 200px;
+}
+.logo i{
+    font-size: 30px;
+}
+.logo>div:nth-child(1){
+    margin-left: 400px;
+}
+.logo>div:nth-child(2){
+    float: right;
+    padding: 10px;
+    margin-left: 400px;
+}
+
+.smallnav{
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.smallnav input{
+    margin-top: 15px;
+    font-size: 15px;
+    outline: none;
+}
+
+.smallnav>div:nth-child(1)>ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.smallnav li{
+    margin-left: 10px;
+}
+.smallnav input:hover{
+    width: 250px;
+}
+
+#txt{
+    font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
+    margin-left: 40px;
+    padding: 20px;
+}
+
+.proceed{
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+.proceed>a>button{
+    border: none;
+    padding: 10px 15px ;
+    background-color: black;
+    color: white;
+    right: 20px;
+    position: absolute;
+}
+
+.proceed button:hover{
+    cursor: pointer;
+}
+.proceed>div{
+    width: 23%;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+}
+
+.proceed>div>ul{
+    display: flex;
+}
+
+.proceed li{
+    margin: 10px;
+    font-weight: bold;
+    list-style-type: none;
+    font-family: Futura-Medium,Century Gothic,Gill Sans,Helvetica,Arial,sans-serif;
+}
+
+.cartmain{
+    width: 80%;
+    margin: auto;
+    margin-top: 60px;
+}
+.cartmain img{
+    width: 250px;
+}
+
+.bigdiv{
+    justify-content: space-between;
+    display: flex;
+    margin: 40px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 10px;
+}
+
+.bigdiv>div:nth-child(1){
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.bigdiv>div:nth-child(1)>div:nth-child(2){
+    margin-left: 20px;
+}
+
+.fa-trash{
+    color: red;
+    font-size: 20px;
+}
+
+.fa-trash:hover{
+    cursor: pointer;
+}
+
+.plus, .minus{
+    border:none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin: 8px;
+    padding: 5px 10px;
+}
+
+.plus, .minus:hover{
+    cursor: pointer;
+}
+
+.total{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.play{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 15px;
+}
+.play>div{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+}
+.play>div>img:nth-child(1){
+    height: 40px;
+    margin-top: 5px;
+}
+.play>div>img:nth-child(2){
+    height: 50px;
+}
+.footer{
+    width: 80%;
+    margin: auto;
+    text-align:center;
+    padding: 10px;
+}
+.footer>table{
+    width: 100%;
+    margin: auto;
+    
+}
+.footer>table>thead{
+    font-weight: bold;
+}
+tbody button{
+    border: none;
+    padding: 2px 20px;
+    background-color: black;
+    color: white;
+}
+#social{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+#social i{
+    color: black;
+}
+.copyright{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+#scrollTop{
+    position: fixed;
+    float: right;
+    background-color: rgba(141, 141, 141, 0.867);
+    color: white;
+    font-size: 25px;
+    padding: 10px 17px;
+    margin-top: 550px;
+    text-align: center;
+    margin-right: 10px;
+    z-index: 99;
+    right: 0;
+}
+#scrollTop:hover{
+    cursor: pointer;
+}
