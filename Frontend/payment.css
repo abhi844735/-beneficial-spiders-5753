@@ -1,0 +1,27 @@
+.payment{
+    width: 25%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.payment button{
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 10px 40px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: red;
+}
+span{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover{
+    cursor: pointer;
+}

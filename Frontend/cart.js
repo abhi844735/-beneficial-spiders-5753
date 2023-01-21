@@ -73,7 +73,7 @@ function del_elem(data, index){
 let total = document.querySelector(".total");
 
 let t =  cartbag.reduce((acc,elem,i)=>{
-    return  acc + elem.quantity*(elem.price);
+    return  acc + elem.quantity*(elem.discount_price);
 },0)
 
 total.innerText = "Grand Total:"+" "+"Rs."+t;
