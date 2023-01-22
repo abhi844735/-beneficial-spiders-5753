@@ -1,7 +1,7 @@
 let bag;
 async function fetching_data(query){
     try {
-        let res = await fetch(`http://localhost:1100/product?q=${query}`);
+        let res = await fetch(`https://tender-lamb-belt.cyclic.app/product?q=${query}`);
         if(res.status==200&&res.ok){
             let data=await res.json();
             // console.log(data.message)

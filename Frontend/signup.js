@@ -11,7 +11,7 @@ form.addEventListener("submit",(e)=>{
 })
 let registeration=async(obj)=>{
    try {
-    let res =await fetch("http://localhost:1100/user/register",{
+    let res =await fetch("https://tender-lamb-belt.cyclic.app/user/register",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
